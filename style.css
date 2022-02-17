@@ -45,9 +45,10 @@ a{
     font-size: 16px;
     font-weight: bold;
     color: #722f37;
+    letter-spacing: 2px;
 }
 
-.menu > li:nth-child(7){
+.menu > li:nth-child(6){
     background-color: #ff7f00;
     -webkit-border-radius: 10px 20px;
     box-shadow:0 2px 2px #666;
@@ -90,4 +91,40 @@ text-align: center;
     padding: 15px;
     text-align: center;
     margin-top: 20px;
+}
+
+@media (max-width: 446px){
+    .menu{
+        display: grid;
+    }
+    .header, .menu{
+        justify-content: center;
+    }
+    .menu li a{
+        color: rgb(167, 135, 54);
+        text-align: center;
+        background-color: #0c0d13;
+        -webkit-border-radius: 10px 20px;
+        margin-bottom: 5px;
+    }
+    .menu > li:nth-child(6){
+        background-color: rgb(167, 135, 54);
+        -webkit-border-radius: 10px 20px;
+        color: #0c0d13;
+    }
+    .acomodacoes{
+        display: block;
+    }
+}
+
+.carousel-caption{
+    background-color: rgb(167, 135, 54);
+    -webkit-border-radius: 10px 20px;
+}
+
+.titulo_acomodacoes{
+    margin-bottom: 16px;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 20px;
 }
